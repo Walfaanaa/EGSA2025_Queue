@@ -4,7 +4,7 @@ import pandas as pd
 st.title("EGSA Queue Payment Lookup")
 
 # GitHub raw URL of your Excel file
-url = "https://github.com/Walfaanaa/EGSA2025_Queue/raw/main/members_data.xlsx"
+url = "https://github.com/Walfaanaa/EGSA2025_Queue/raw/main/AO(uqubii).xlsx"
 
 # Read Excel file directly from GitHub
 df = pd.read_excel(url)
@@ -28,3 +28,4 @@ selected_row = df[df['queue'] == queue_number]
 final_payment = selected_row['final_money'].values[0]
 
 st.write(f"💰 Final Payment for Queue {queue_number}: **{final_payment:,.2f} ETB**")
+
